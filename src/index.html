@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <body>
+        <p> Departamento de serviço secreto </p>
+     <form>
+              <h3>CRIPTOGRAFIA</h3>
+
+        <p> <textarea rows="10" cols="30" maxlength="400"></textarea>
+             <input type="text" name="Nome" size="80" /> 
+             <button onclick="encode()">Criptografar</button>
+             <p class="message1"></p>
+
+
+        <p> <textarea rows="10" cols="30" maxlength="400"></textarea>
+            <input type="text" name="Nome" size="80" />  
+            <button onclick="decode()">Descriptografar</button>
+            <p class="message1"></p>
+
+
+
+      </form>
+
+   
+    <div id="root"> </div>
     <script src="index.js" type="module"></script>
-  </body>
+   </body>
 </html>
