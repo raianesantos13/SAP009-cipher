@@ -11,21 +11,26 @@
     <body>
         <p> Departamento de serviço secreto </p>
      <form>
-              <h3>CRIPTOGRAFIA</h3>
+           <h3>CRIPTOGRAFIA</h3>
 
-        <p> <textarea rows="10" cols="30" maxlength="400"></textarea>
+            <p> 
+            <input type="number" min="01" max="15">  
+              <button onclick="deslocamento()">Deslocamento</button>
+              
+
+           <p> <textarea rows="10" cols="30" id="caixa1" maxlength="400"></textarea>
              <input type="text" name="Nome" size="80" /> 
              <button onclick="encode()">Criptografar</button>
              <p class="message1"></p>
 
 
-        <p> <textarea rows="10" cols="30" maxlength="400"></textarea>
+            <p> <textarea rows="10" cols="30" id="caixa2" maxlength="400"></textarea>
             <input type="text" name="Nome" size="80" />  
             <button onclick="decode()">Descriptografar</button>
             <p class="message1"></p>
 
 
-
+       
       </form>
 
    
