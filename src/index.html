@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-     <link rel="stylesheet" href="style.css" />
+    <title>Investigação criminal</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href=https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   </head>
-    <body>
-        <p> Departamento de serviço secreto </p>
-     <form>
-           <h3>CRIPTOGRAFIA</h3>
 
-            <p> 
-            <input type="number" min="01" max="15">  
-              <button onclick="deslocamento()">Deslocamento</button>
-              
+  <body>
+    <div id="root">
+      <h1>Departamento de serviço secreto</h1>
+      <h2>CRIPTOGRAFIA-INFORMAÇÕES CONFIDENCIAIS</h2>
+    </div>
 
-           <p> <textarea rows="10" cols="30" id="caixa1" maxlength="400"></textarea>
-             <input type="text" name="Nome" size="80" /> 
-             <button onclick="encode()">Criptografar</button>
-             <p class="message1"></p>
-
-
-            <p> <textarea rows="10" cols="30" id="caixa2" maxlength="400"></textarea>
-            <input type="text" name="Nome" size="80" />  
-            <button onclick="decode()">Descriptografar</button>
-            <p class="message1"></p>
+    <form>
+      <div class="keybox">
+        <label for="cipherkey">Deslocamento:</label>
+        <input type="number" id="cipherkey"/><br><br>
+      </div>
+  <div class="container">
 
 
+
+      <fieldset>
+       <p> <label for="encodetext"><b>Criptografar</b></label><br>
+        <input type="text" placeholder="Mensagem" id="encodetext"/><br>
+        <input type="button" value="Criptografar" id="encodebutton"/> <br>
        
-      </form>
+        <div id="etext"></div>
+      </fieldset>
+    </p>
 
-   
-    <div id="root"> </div>
-    <script src="index.js" type="module"></script>
-   </body>
+
+
+      <fieldset>
+     <p>   <label for="decodetext"><b>Descriptografar:</b></label><br>
+        <input type="text" placeholder="Mensagem alienígena" id="decodetext"/><br>
+        <input type="button" value="Descriptografar" id="decodebutton"/><br>
+        
+        <div id="dtext">
+        </div>
+      </fieldset>
+    </p>
+      </div>
+    </form>
+
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+
+    <footer>
+        <p>Raiane Ferreira dos santos</p>
+        <p>Contact: <a href="raianefsantos13@gmail.com">raianefsantos13@gmail.com</a>.</p>
+    </footer>
+
+  </body>
+
 </html>
+
