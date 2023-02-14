@@ -8,8 +8,6 @@
 * [4. Características a desenvolver](#5-Caracteristicas-a-desenvolver)
 * [5. Ferramentas utilizadas:](#5-considerações-técnicas)
 * [6. Pagina web](#6-pagina-web)
-* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Para considerar o feedback do projeto](#9-para-considerar-o-feedback-do-projeto)
 
 ***
 
